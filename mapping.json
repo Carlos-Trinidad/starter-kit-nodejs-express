@@ -1,0 +1,16 @@
+{
+    "service1_credentials": {
+        "searchPatterns": [
+            "cloudfoundry:$.*[?(@.name == 'service1-name1')].credentials",
+            "file:/localdev/env.json:$.service1.credentials"
+        ]
+    },
+    "environment_variable": {
+        "searchPatterns": [
+            "env:environment_variable_name",
+            "file:/localdev/env.json:$.environment_variable.name"
+        ]
+    },
+    "_comment": "This is a comment, don't use in the original file (mapping.json). For more information about search patterns syntax see: https://github.com/ibm-developer/ibm-cloud-env/blob/master/server/config/mappings.json",
+    "_comment2": "For information about general package see: https://github.com/ibm-developer/ibm-cloud-env  ||  https://www.npmjs.com/package/ibm-cloud-env"
+}

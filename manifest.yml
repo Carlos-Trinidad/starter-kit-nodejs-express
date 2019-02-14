@@ -1,0 +1,8 @@
+applications:
+  - name: 'template-start-backend'
+    memory: 256M
+    instances: 1
+    services:
+      - name of service ibm cloud
+    env:
+      environment_variable_example: environment_variable_example
