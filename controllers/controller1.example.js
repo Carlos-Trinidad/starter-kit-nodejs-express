@@ -1,7 +1,5 @@
-const IBMCloudEnv = require('../configuration/env');
+const ENV = require('../configuration/env');
 
-const service1_credentials = IBMCloudEnv.getDictionary("service1_credentials");
-const environment_variable = IBMCloudEnv.getDictionary("environment_variable").value;
 
 function myFunction1(req, res) {
     res.status(200).send("Hello World")

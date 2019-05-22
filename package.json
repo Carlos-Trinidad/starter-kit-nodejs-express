@@ -12,7 +12,8 @@
         "cors": "^2.8.5",
         "express": "^4.16.1",
         "ibm-cloud-env": "^0.2.6",
-        "watson-developer-cloud": "^3.13.0"
+        "morgan": "^1.9.1",
+        "ibm-watson": "^4.1.2"
     },
     "engines": {
         "node": ">=10.0.0",
