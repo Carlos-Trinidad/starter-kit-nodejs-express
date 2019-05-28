@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Demo One Page Fondo Gardiente</title>
+<meta name="author" content="Lucia Carolina Ramos" />
+<meta name="Resource-type" content="Document" />
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
+	rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css"
+	href="../one-page-generator/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="fondo-gardiente.css" />
+<link href="/css/all.css" rel="stylesheet" type="text/css">
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+	<div id="fullpage">
+	
+		<div class="section " id="section0">
+		
+			<div class="intro">
+				<h1>Primera sección</h1>
+				<p>Vamos probando</p>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="slide" id="slide1">
+				<div class="intro">
+					<h1>click me</h1>
+					<p>Sub secciones.</p>
+				</div>
+			</div>
+
+			<div class="slide" id="slide2">
+				<h1>Segunda sub sección</h1>
+			</div>
+
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Vamos todavía :)</h1>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../one-page-generator/fullpage.js"></script>
+
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors : [ 'firstPage', 'secondPage', '3rdPage' ],
+			sectionsColor : [ '#C63D0F', '#1BBC9B', '#7E8F7C' ],
+			navigation : true,
+			navigationPosition : 'right',
+			navigationTooltips : [ 'First page', 'Second page',
+					'Third and last page' ]
+		});
+	</script>
+
+</body>
+</html>

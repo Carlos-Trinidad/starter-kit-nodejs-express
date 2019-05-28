@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link href="/css/all.css" rel="stylesheet" type="text/css">
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+<link href="/css/formularios.css" rel="stylesheet" type="text/css">
+
+</head>
+<html>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<img src="/img/bee_128.png" alt="Logo de IBM - Abeja"></img>
+			<h1>
+				<strong>Prueba</strong> - Formulario con archivo
+			</h1>
+		</header>
+		<section class="l-container">
+			<h2>Datos</h2>
+			<form class="form" ref='uploadForm' id='uploadForm' action='/upload'
+				method='post' encType="multipart/form-data">
+
+				<div class="errorBox " style="display: none" id="errorBox">
+					<div class="errorBox-icon">
+						<i class="fa fa-times"></i>
+					</div>
+					<div class="errorBox-body" id="contenido"></div>
+				</div>
+				<div class="infoBox " style="display: none" id="infoBox">
+					<div class="infoBox-icon">
+						<i class="fas fa-check"></i>
+					</div>
+					<div class="infoBox-body" id="contenido_info"></div>
+				</div>
+				<label class="form__label" for="">Nombre / Apellido</label> <input
+					class="form__input" id="nombre" type="text"
+					placeholder="Ingrese nombre y apellido" /> <span id="nombre_error"></span>
+				<label class="form__label" for="">Nro.documento</label> <input
+					class="form__input" id="nrodoc" type="text"
+					placeholder="Ingrese nro. documento" /> <span id="nrodoc_error"></span>
+
+				<label class="form__label" for="">Sueldo nominal</label> <input
+					class="form__input" id="sueldo" type="text"
+					placeholder="Ingrese sueldo nominal" /> <span id="sueldo_error"></span>
+				<div>
+
+					<label class="form__label" for="">Archivo</label> <input<input
+						id="uploadFile" class="input__upload form__input" />
+					<div class="fileUpload btn btn--browse">
+						<span><i class="fas fa-folder-open"></i></span> <input
+							id="uploadBtn" type="file" name="sampleFile" class="upload" />
+					</div>
+				</div>
+				<input value="Validar formulario" onclick="validarForm();"
+					class="form__submit is-btn-hovered"></input> <input type="reset" value="Limpiar formulario"> 
+			</form>
+		</section>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/formulario.js"></script>
+</body>
+</html>

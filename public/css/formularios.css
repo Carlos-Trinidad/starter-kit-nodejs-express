@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+
+fieldset {
+	border: none;
+}
+
+input[type=submit] {
+	border: none;
+	font-size: 1em;
+	margin-top: 30px;
+}
+
+.l-container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	padding: 35px;
+	height: auto;
+	background:#FFFFFF;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+/************* 
+Modules
+**************/
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	padding-left: 5px;
+	height: auto;
+	min-width: 300px;
+	border-radius: 2px;
+}
+
+.form__label {
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.form__input {
+	margin-top: 10px;
+	width: 95%;
+	font-size: 13px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #41d6c3;
+	background: transparent;
+}
+.form__input:focus {
+	border-bottom: 2px solid #E2237E;
+}
+.input__upload {
+	float: left;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+}
+
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.btn--browse {
+	border-left: 0;
+	border-radius: 0 2px 2px 0;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	background-color: #30588c;
+	padding: 3px;
+	width: 30px;
+	float: right;
+}
+
+.btn--browse:hover {
+	color: #41d6c3;
+}
+
+.error {
+	border-bottom: 1px solid red;
+}
+
+span[id*="error"] {
+	font-size: 11px;
+	margin-top: 4px;
+	width: 95%;
+	color: red;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.form__submit {
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 20px;
+	width: 200px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	background-color: #30588c;
+	text-decoration: underline;
+}
+
+.errorBox {
+	width: 100%;
+	background-color: #ffcdcd;
+	color: #000000;
+	border-radius: 5px;
+	border: 1px solid #e4655f;
+	margin-bottom: 10px;
+}
+
+.errorBox-icon {
+	display: table-cell;
+	vertical-align: middle;
+	width: 60px;
+	color: #ffffff;
+	padding: 15px;
+	text-align: center;
+	background-color: rgb(240, 53, 59);
+}
+
+.errorBox-icon i {
+	width: 20px;
+	font-size: 20px;
+}
+
+.errorBox-body {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px;
+	margin-top: 6px;
+}
+
+.infoBox {
+	width: 100%;
+	background-color: #DFF2BF;
+	color: #000000;
+	border-radius: 5px;
+	border: 1px solid #270;
+	margin-bottom: 10px;
+}
+
+.infoBox-icon {
+	display: table-cell;
+	vertical-align: middle;
+	width: 60px;
+	padding: 15px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #270;
+}
+
+.infoBox-icon i {
+	width: 20px;
+	font-size: 20px;
+}
+
+.infoBox-body {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px;
+	margin-top: 6px;
+	color: #270;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+/************* 
+states
+**************/
+.is-btn-hovered:hover {
+	background: #3d70b2;
+}
