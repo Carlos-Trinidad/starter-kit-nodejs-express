@@ -5,19 +5,19 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/routes');
 const cors = require('./middlewares/cors');
 const morgan = require('morgan');
-//const fileUpload = require('express-fileupload');
+const fileUpload = require('express-fileupload');
 const app = express();
 
 app.use(cors);
 app.use(bodyParser.json());
 app.use(morgan('dev'));
-//app.use(fileUpload());
-//app.use(express.static(__dirname + "/public")); // load UI from public folder
+app.use(fileUpload());
+app.use(express.static(__dirname + "/public")); // load UI from public folder
 
 app.use('/api', routes);
 
 
-/* app.post('/upload', function(req, res) {
+app.post('/upload', function(req, res) {
   if (Object.keys(req.files).length == 0) {
     return res.status(400).send('No files were uploaded.');
   }
@@ -31,5 +31,5 @@ app.use('/api', routes);
       return res.status(500).send(err);
     res.send('File uploaded!');
   });
-}); */
+});
 module.exports = app;
